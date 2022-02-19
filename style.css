@@ -1,0 +1,189 @@
+/* table of contents
+  1. global styles
+  2. 
+*/
+
+/* =============
+   global styles
+   ============= */
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.938rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* =============
+     typography
+   ============= */
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-size: 1.5rem;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.7rem;
+  text-align: left;
+  margin: 0 0 2rem 0;
+}
+
+/* =============
+      layout
+   ============= */
+
+.isResponsive {
+  display: flex;
+  flex-shrink: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.cardContent {
+  max-width: 16rem;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cars {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =============
+   divs with cars offer
+   ============= */
+
+.cars img {
+  height: 25px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.8rem 0.8rem 0 0;
+  padding: 2rem;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 0.8rem 0.8rem;
+  padding: 2rem;
+}
+
+/* =============
+   buttons
+   ============= */
+
+.learnMoreButton {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.7rem;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1.3rem;
+}
+
+.sedan .learnMoreButton {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv .learnMoreButton {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .learnMoreButton {
+  color: hsl(179, 100%, 13%);
+}
+
+/* =======================
+   buttons active states
+   ======================= */
+
+.sedan .learnMoreButton:hover,
+.sedan .learnMoreButton:focus {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv .learnMoreButton:hover,
+.suv .learnMoreButton:focus {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury .learnMoreButton:hover,
+.luxury .learnMoreButton:focus {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.learnMoreButton:hover,
+.learnMoreButton:focus {
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+/* =============
+   desktop
+   ============= */
+
+@media only screen and (min-width: 525px) {
+  p {
+    margin: 1.5rem 0 4rem 0;
+  }
+
+  .cardContent {
+    max-width: 44rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .cars {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sedan {
+    border-radius: 0.4rem 0 0 0.4rem;
+  }
+
+  .luxury {
+    border-radius: 0 0.4rem 0.4rem 0;
+  }
+}
