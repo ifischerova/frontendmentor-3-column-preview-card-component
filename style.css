@@ -61,7 +61,7 @@ h2 {
 
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: left;
   margin: 0 0 2rem 0;
 }
@@ -95,6 +95,7 @@ p {
 
 .cars img {
   height: 25px;
+  width: 38px;
 }
 
 .sedan {
@@ -118,7 +119,7 @@ p {
 .learnMoreButton {
   text-decoration: none;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   background-color: hsl(0, 0%, 95%);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 1.3rem;
@@ -173,7 +174,7 @@ p {
   /* layout */
 
   .cardContent {
-    max-width: 44rem;
+    max-width: 46rem;
     flex-direction: row;
     align-items: center;
     padding: 1rem;
@@ -186,7 +187,6 @@ p {
 
   .cars div {
     flex-grow: 1;
-    padding: 2rem;
   }
 
   .sedan {
