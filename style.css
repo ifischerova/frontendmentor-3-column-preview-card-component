@@ -1,6 +1,12 @@
 /* table of contents
   1. global styles
-  2. 
+  2. typography
+  3. layout
+  4. buttons
+     4.1 buttons - active states
+  5. desktop 
+     5.1 typography
+     5.2 layout
 */
 
 /* =============
@@ -40,9 +46,9 @@ body {
   border: 0;
 }
 
-/* =============
-     typography
-   ============= */
+/* ==========
+   typography
+   ========== */
 
 h2 {
   color: hsl(0, 0%, 95%);
@@ -60,9 +66,9 @@ p {
   margin: 0 0 2rem 0;
 }
 
-/* =============
-      layout
-   ============= */
+/* =======
+   layout
+   ======= */
 
 .isResponsive {
   display: flex;
@@ -83,9 +89,9 @@ p {
   align-items: center;
 }
 
-/* =============
-   divs with cars offer
-   ============= */
+.cars div {
+  padding: 2rem;
+}
 
 .cars img {
   height: 25px;
@@ -94,23 +100,20 @@ p {
 .sedan {
   background-color: hsl(31, 77%, 52%);
   border-radius: 0.8rem 0.8rem 0 0;
-  padding: 2rem;
 }
 
 .suv {
   background-color: hsl(184, 100%, 22%);
-  padding: 2rem;
 }
 
 .luxury {
   background-color: hsl(179, 100%, 13%);
   border-radius: 0 0 0.8rem 0.8rem;
-  padding: 2rem;
 }
 
-/* =============
+/* =======
    buttons
-   ============= */
+   ======= */
 
 .learnMoreButton {
   text-decoration: none;
@@ -133,9 +136,7 @@ p {
   color: hsl(179, 100%, 13%);
 }
 
-/* =======================
-   buttons active states
-   ======================= */
+/* buttons - active states */
 
 .sedan .learnMoreButton:hover,
 .sedan .learnMoreButton:focus {
@@ -158,14 +159,18 @@ p {
   border: 1px solid hsl(0, 0%, 95%);
 }
 
-/* =============
+/* =======
    desktop
-   ============= */
+   ======= */
 
 @media only screen and (min-width: 525px) {
+
+  /* typography */
   p {
     margin: 1.5rem 0 4rem 0;
   }
+
+  /* layout */
 
   .cardContent {
     max-width: 44rem;
@@ -177,6 +182,11 @@ p {
   .cars {
     flex-direction: row;
     align-items: center;
+  }
+
+  .cars div {
+    flex-grow: 1;
+    padding: 2rem;
   }
 
   .sedan {
