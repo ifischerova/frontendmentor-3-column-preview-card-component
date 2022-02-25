@@ -86,7 +86,7 @@ p {
 
 .cars {
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .cars div {
