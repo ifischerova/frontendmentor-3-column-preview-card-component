@@ -149,7 +149,7 @@ p {
   background-color: hsl(184, 100%, 22%);
 }
 
-.luxury .learnMoreButton:hover,
+.luxury .learnMoreButton:hover, 
 .luxury .learnMoreButton:focus {
   background-color: hsl(179, 100%, 13%);
 }
@@ -158,9 +158,10 @@ p {
 .learnMoreButton:focus {
   color: hsl(0, 0%, 95%);
   border: 1px solid hsl(0, 0%, 95%);
-  padding: 0.5rem 1rem;
-  border-radius: 1.3rem;
-  overflow: hidden;
+}
+
+.learnMoreButton:focus-visible {
+  border: 3px solid hsl(0, 3%, 6%);
 }
 
 /* =======

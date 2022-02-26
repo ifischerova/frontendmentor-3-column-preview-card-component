@@ -34,6 +34,12 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
+### What I learned
+- interactive elements must also have *focus-visible* styles for keyboard users.
+(from the community feedback)
+
+[:focus-visible pseudoclass on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible)
+
 ## Author
 
 - Frontend Mentor - [@Ivuska](https://www.frontendmentor.io/profile/Ivuska)
