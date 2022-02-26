@@ -142,15 +142,11 @@ p {
 .sedan .learnMoreButton:hover,
 .sedan .learnMoreButton:focus {
   background-color: hsl(31, 77%, 52%);
-  padding: 0.5rem 1rem;
-  border-radius: 1.3rem;
 }
 
 .suv .learnMoreButton:hover,
 .suv .learnMoreButton:focus {
   background-color: hsl(184, 100%, 22%);
-  padding: 0.5rem 1rem;
-  border-radius: 1.3rem;
 }
 
 .luxury .learnMoreButton:hover,
