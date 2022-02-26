@@ -87,6 +87,8 @@ p {
 .cars {
   flex-direction: column;
   align-items: stretch;
+  border-radius: 0.8rem;
+  overflow: hidden;
 }
 
 .cars div {
@@ -100,7 +102,6 @@ p {
 
 .sedan {
   background-color: hsl(31, 77%, 52%);
-  border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .suv {
@@ -109,7 +110,6 @@ p {
 
 .luxury {
   background-color: hsl(179, 100%, 13%);
-  border-radius: 0 0 0.8rem 0.8rem;
 }
 
 /* =======
@@ -121,7 +121,7 @@ p {
   text-align: center;
   font-size: 0.8rem;
   background-color: hsl(0, 0%, 95%);
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1.3rem;
 }
 
@@ -142,11 +142,15 @@ p {
 .sedan .learnMoreButton:hover,
 .sedan .learnMoreButton:focus {
   background-color: hsl(31, 77%, 52%);
+  padding: 0.5rem 1rem;
+  border-radius: 1.3rem;
 }
 
 .suv .learnMoreButton:hover,
 .suv .learnMoreButton:focus {
   background-color: hsl(184, 100%, 22%);
+  padding: 0.5rem 1rem;
+  border-radius: 1.3rem;
 }
 
 .luxury .learnMoreButton:hover,
@@ -158,6 +162,8 @@ p {
 .learnMoreButton:focus {
   color: hsl(0, 0%, 95%);
   border: 1px solid hsl(0, 0%, 95%);
+  padding: 0.5rem 1rem;
+  border-radius: 1.3rem;
 }
 
 /* =======
@@ -183,17 +189,11 @@ p {
   .cars {
     flex-direction: row;
     align-items: center;
+    border-radius: 0.4rem;
+    overflow: hidden;
   }
 
   .cars div {
     flex-grow: 1;
-  }
-
-  .sedan {
-    border-radius: 0.4rem 0 0 0.4rem;
-  }
-
-  .luxury {
-    border-radius: 0 0.4rem 0.4rem 0;
   }
 }
