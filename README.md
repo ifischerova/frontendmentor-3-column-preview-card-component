@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution repository](https://github.com/Ivuska/frontendmentor-3-column-preview-card-component)
-- Live Site URL: [Live preview of my solution](https://ivuska.github.io/frontendmentor-3-column-preview-card-component/)
+- Live Site URL: [Live preview of my solution](https://ifischerova.github.io/frontendmentor-3-column-preview-card-component/)
 
 ## My process
 
